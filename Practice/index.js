@@ -40,8 +40,6 @@ var quizBL  = document.getElementById("qandaDISID");
 var finalBL = document.getElementById("finalID"); 
 //STARTER BUTTON
 var startBTNEL = document.getElementById("startBtn");
-
-
 function start(){
     containerDIVEL.removeChild(quizBL);
     containerDIVEL.removeChild(finalBL);
@@ -66,13 +64,14 @@ function quiz(){
     answerULEL.addEventListener("click", function (event) {
         event.preventDefault();
         console.log("WORKING BUTTONS");
-        if (i <= qandA.length) {
+        if (i <=5) {
             questionEL.innerHTML = "";
             a1BtnEL.innerHTML = "";
             a2BtnEL.innerHTML = "";
             a3BtnEL.innerHTML = "";
             a4BtnEL.innerHTML = "";
             i++;
+            quiz();
         }
         else { final(); }
     })

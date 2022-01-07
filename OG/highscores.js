@@ -1,22 +1,20 @@
 //Grab Data Need to append
 var scoreList = document.getElementById('scoreList');
-//From local storage   
-// var initial = localStorage.getItem("intitial");
-// var score = localStorage.getItem("score");
-//For Navigation Btns 
 var goBackBtnEL = document.getElementById('goBack');
 var clearHBtnEL = document.getElementById('clearHistory');
 
 function displayScore (){
-    var data = localStorage.getItem(JSON.stringify());
+    var data = JSON.parse(localStorage.getItem("allScores"));
+    console.log(data);
+    if(data != null){
     for (var i = 0; i < data.length; i++) {
-        var intitials = data[i][0].val;
-        var scores = data[i][1].val;
-        var num = i+1;
-        scoreList.appendChild(num +". " + intitials + "-" + scores);
-        console.log(num);
-        console.log(intitials);
-        console.log(scores);
+        var name = data[i].initials;
+        var score = data[i].score; 
+
+        var liEL= document.createElement('li');
+        liEL.textContent = (i+1) +". " + name + "-" + score;
+        scoreList.append(liEL);     
+    }
     }
 }
 displayScore();
