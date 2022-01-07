@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header class="headerC">
+        <h1 id="viewScore"><a href="phigh.html">View Score</a></h1>
+        <h1 id="time">Timer: </h1>
+    </header>
+    <div class="container" id="container">
+        <!-- START -->
+        <div class="start" id="startID">
+            <h1 id="startTitle">Code Quiz</h1>
+            <p1 id="startText">Try to answer the following code related questions within the time limit. Keep in mind
+                that incorrect answers will penalize your score/time by 10 seconds!</p1><br>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+        <!-- QUIZ -->
+        <div class="qandaDIS" id="qandaDISID">
+            <p1 id="questionID"></p1>
+            <ul id="answersID">
+                <li><button id="a1Btn" class="optionBtns"> </button></li>
+                <li><button id="a2Btn" class="optionBtns"> </button></li>
+                <li><button id="a3Btn" class="optionBtns"> </button></li>
+                <li><button id="a4Btn" class="optionBtns"> </button></li>
+            </ul>
+ 
+            <p1 id="answerVID"></p1>
+        </div>
+            <!-- FINAL BODY -->
+        <div class="final" id="finalID">
+            <p1>Final Score</p1>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
