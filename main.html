@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> <!-- Linking the main style page -->
     <title>Code Quiz</title>
-</head>
-
+</head> 
 <body>
-    <header class="headerC">
-        <h1 id="viewScore"><a href="phigh.html">View Score</a></h1>
-        <h1 id="time">Timer: </h1>
+    <!-- MAIN HEADER (Includes time and score link) -->
+    <header class= "headerC">
+        <h1 id = "viewScore"><a href = "highScores.html">View Score</a></h1>
+        <h1 id = "time">Timer: </h1> 
     </header>
-    <div class="container" id="container">
-        <!-- START -->
-        <div class="start" id="startID">
+    <!-- CONTAINER -->
+    <div class="container" id="containerID">
+        <!--START-->
+        <div class = "start" id ="startID">
             <h1 id="startTitle">Code Quiz</h1>
             <p1 id="startText">Try to answer the following code related questions within the time limit. Keep in mind
                 that incorrect answers will penalize your score/time by 10 seconds!</p1><br>
             <button id="startBtn">Start Quiz</button>
         </div>
-        <!-- QUIZ -->
+        <!--QUIZ- QUESTION AND ANSWER SET UP -->
         <div class="qandaDIS" id="qandaDISID">
             <p1 id="questionID"></p1>
             <ul id="answersID">
@@ -31,15 +31,15 @@
                 <li><button id="a3Btn" class="optionBtns"> </button></li>
                 <li><button id="a4Btn" class="optionBtns"> </button></li>
             </ul>
- 
             <p1 id="answerVID"></p1>
         </div>
-            <!-- FINAL BODY -->
-        <div class="final" id="finalID">
-            <p1>Final Score</p1>
+        <!--FINAL RESPONSE-->
+        <div id = "finalID">
+            <h1>All done!</h1><br>
+            <p id = "finalScore"></p>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="main.js"></script> <!-- Linking the script to the main.js file -->
 </body>
-
 </html>
+
