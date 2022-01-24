@@ -12,7 +12,7 @@ function displayScore (){
         var score = data[i].score; 
 
         var liEL= document.createElement('li');
-        liEL.textContent = (i+1) +". " + name + "-" + score;
+        liEL.textContent = (i+1) +". " + name + "   " + score;
         scoreList.append(liEL);     
     }
     }
