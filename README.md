@@ -10,9 +10,9 @@ Like it's name, this website is powered by Java to help protect your companies s
 
 The webpage is used in your browser. By clicking the start Button, you are then prompted to answer a number of questions. Afterwards, you are then asked to input your initials and it will be saved. Then the application should navigate you to a view of all the scores. Here you have the option to wither go back or clear the data. 
 
-## Screen shot of application
+## Demo
 
-Please view attachment video in the Assets Folder to see a walk through of how the application should run. 
+![How the app works.](Code-Quiz.gif) 
 
 ## Links
 GitHub: https://github.com/ed2022/Code_Quiz.git

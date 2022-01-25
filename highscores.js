@@ -21,7 +21,7 @@ displayScore();
 
 // just takes it back to the previous page
 goBackBtnEL.addEventListener("click" , function(){
-    location.href = "main.html"; 
+    location.href = "index.html"; 
 })
 
 clearHBtnEL.addEventListener("click", function(){
